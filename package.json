@@ -1,0 +1,32 @@
+{
+  "name": "gdl002-burger-queen",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://march-hdz-carba.github.io/gdl002-burger-queen",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/March-Hdz-Carba/gdl002-burger-queen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/March-Hdz-Carba/gdl002-burger-queen/issues"
+  }
+
+}

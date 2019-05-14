@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=B612|Charmonman');
+
+.tittle{
+    color: #FBC507;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    font-family: 'B612', sans-serif;
+    font-size: 48px;
+}
+
+.tittle-p{
+    font-family: 'Charmonman', cursive;
+    font-size: 64px;
+}

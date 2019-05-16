@@ -6,6 +6,9 @@ import ButtonKitchen from "./components/ButtonKitcken";
 import ButtonAdministration from "./components/ButtonAdministration";
 import ButtonBreakfast from "./components/ButtonBreakfast";
 import ButtonMeal from "./components/ButtonMeal";
+import NameCostumer from "./components/nameCostumer";
+
+
 
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
         <ButtonKitchen />
         <ButtonAdministration />
       </section>
+        <NameCostumer />
       <div className="buttons-food">
         <ButtonBreakfast />
         <ButtonMeal />

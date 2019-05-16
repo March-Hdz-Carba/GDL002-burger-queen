@@ -16,11 +16,17 @@ class ButtonMeal extends React.Component {
             })
         }
 
+        print = (event) => {
+            const target = event.currentTarget;
+            const name = target.getAttribute("name")
+            console.log('funcionando' + name);
+        }
+
     render(){
       const mealButtons = this.state.menuMeal.map((menu, i) => {
             return(
                 <p>
-                    <button className="btn btn-secondary" key={i}>
+                    <button className="btn btn-secondary" key={i} onClick={this.print} name={menu.description} value={menu.price}>
                         {menu.description} 
                         {menu.price}
                     </button>

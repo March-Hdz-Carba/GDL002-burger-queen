@@ -15,12 +15,28 @@ class ButtonBreakfast extends React.Component {
             this.setState ({ show : !this.state.show 
             })
         }
+    
+       /* handleInput(e){
+            const { value, name} = e.target;
+            this.setState({
+                [name] : value
+            });
+            console.log(this.state);
+        } */
+        
+        print = (event) => {
+            const target = event.currentTarget;
+            const name = target.getAttribute("name")
+            console.log('funcionando' + name);
+        }
+
+        
 
     render(){
       const breakfast = this.state.menuBreakfast.map((menu, i) => {
             return(
                 <p>
-                    <button className="btn btn-secondary buttonFoodPosition" key={i}>
+                    <button className="btn btn-secondary buttonFoodPosition" key={i} onClick={this.print} name={menu.description} value={menu.price}>
                         {menu.description} 
                         {menu.price}
                     </button>

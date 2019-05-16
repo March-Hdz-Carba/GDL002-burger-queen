@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
-import Tittle from "./components/Tittle"
-import ButtonWaiter from "./components/ButtonWaiter"
-import ButtonKitchen from "./components/ButtonKitcken"
-import ButtonAdministration from "./components/ButtonAdministration"
+import Tittle from "./components/Tittle";
+import ButtonWaiter from "./components/ButtonWaiter";
+import ButtonKitchen from "./components/ButtonKitcken";
+import ButtonAdministration from "./components/ButtonAdministration";
+import ButtonBreakfast from "./components/ButtonBreakfast";
+import ButtonMeal from "./components/ButtonMeal";
 
 
 function App() {
@@ -17,7 +19,11 @@ function App() {
         <ButtonKitchen />
         <ButtonAdministration />
       </section>
-      
+      <div className="buttons-food">
+        <ButtonBreakfast />
+        <ButtonMeal />
+      </div>
+
     </div>
   );
 }

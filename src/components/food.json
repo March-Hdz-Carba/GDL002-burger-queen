@@ -1,0 +1,83 @@
+{
+    "menu":[
+        {
+            "breakfast":[
+                {
+                    "description":"Café Americano",
+                    "price":"$5.00"
+                },
+                {
+                    "description":"Café con Leche",
+                    "price":"$7.00"  
+                },
+                {
+                    "description":"Sandwich de Jamón y queso",
+                    "price":"$10.00"    
+                },
+                {
+                    "description":"Juego de Frutas Natural",
+                    "price":"$7.00"
+                }
+            ]
+        },{
+            "meal":[
+                {
+                    "description":"Hamburguesa Res sencilla",
+                    "price":"10.00"    
+                },
+                {
+                    "description":"Hamburguesa Pollo sencilla",
+                    "price":"10.00"    
+                },
+                {
+                    "description":"Hamburguesa Vegetariana sencilla",
+                    "price":"10.00"    
+                },
+                {
+                    "description":"Hamburguesa Res doble",
+                    "price":"15.00"    
+                },
+                {
+                    "description":"Hamburguesa Pollo doble",
+                    "price":"15.00"    
+                },
+                {
+                    "description":"Hamburguesa Vegetariana doble",
+                    "price":"15.00"    
+                },
+                {
+                    "description":"+ Queso",
+                    "price":"$1.00"    
+                },
+                {
+                    "description":"+ Huevo",
+                    "price":"$1.00"    
+                },
+                {
+                    "description":"Papas Fritas",
+                    "price":"$5.00"    
+                },
+                {
+                    "description":"Aros de Cebolla",
+                    "price":"$5.00"    
+                },
+                {
+                    "description":"Agua de 500ml",
+                    "price":"$5.00"    
+                },
+                {
+                    "description":"Agua de 750ml",
+                    "price":"$7.00"    
+                },
+                {
+                    "description":"Refresco 500ml",
+                    "price":"$7.00"    
+                },
+                {
+                    "description":"Refresco 750ml",
+                    "price":"$10.00"    
+                }
+            ]
+        }
+    ]
+}

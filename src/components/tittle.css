@@ -4,7 +4,7 @@
     color: #FBC507;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: center;
     font-family: 'B612', sans-serif;
     font-size: 48px;
 }

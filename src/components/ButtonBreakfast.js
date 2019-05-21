@@ -8,6 +8,7 @@ class ButtonBreakfast extends React.Component {
         this.state = {
             menuBreakfast : menu[0].breakfast,
             show : true,
+            orders: []
         }
     }
 
@@ -26,17 +27,28 @@ class ButtonBreakfast extends React.Component {
         
         print = (event) => {
             const target = event.currentTarget;
-            const name = target.getAttribute("name")
-            console.log('funcionando' + name);
+            const name = target.getAttribute("name");
+            const price = target.getAttribute("value");
+            console.log('funcionando' + name + " " + price);
         }
 
-        
+        // submit(name, price){
+        //     const orders = this.state.orders;
+        //     const order = {
+        //         item: name,
+        //         price: price,
+        //     }
+        //     orders.push(order);
+        //     this.props.addCommands(this.state.orders);
+        // }
+
 
     render(){
       const breakfast = this.state.menuBreakfast.map((menu, i) => {
             return(
-                <p>
-                    <button className="btn btn-secondary buttonFoodPosition" key={i} onClick={this.print} name={menu.description} value={menu.price}>
+                <p  key={i} >
+                    <button className="btn btn-secondary buttonFoodPosition"
+                        onClick={this.print} type='submit' name={menu.description} value={menu.price}>
                         {menu.description} 
                         {menu.price}
                     </button>

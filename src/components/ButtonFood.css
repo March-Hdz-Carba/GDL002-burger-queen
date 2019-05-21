@@ -36,3 +36,10 @@
     display:flex;
     flex-direction: row;
 }
+
+.comandOrderStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: white;
+}

@@ -4,14 +4,18 @@ import Tittle from "./components/Tittle";
 import ButtonWaiter from "./components/ButtonWaiter";
 import ButtonKitchen from "./components/ButtonKitcken";
 import ButtonAdministration from "./components/ButtonAdministration";
-import ButtonBreakfast from "./components/ButtonBreakfast";
-import ButtonMeal from "./components/ButtonMeal";
+//import ButtonBreakfast from "./components/ButtonBreakfast";
+//import ButtonMeal from "./components/ButtonMeal";
 import NameCostumer from "./components/nameCostumer";
+import OnlyButtonBreakfast from "./components/OnlyButtoBreakfast";
+import OnlyButtoMeal from "./components/OnlyButtoMeal"
+//import BreakfastCommand from "./components/AddCommand";
 
 
 
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -24,10 +28,9 @@ function App() {
       </section>
         <NameCostumer />
       <div className="buttons-food">
-        <ButtonBreakfast />
-        <ButtonMeal />
+        <OnlyButtonBreakfast />
+        <OnlyButtoMeal />
       </div>
-
     </div>
   );
 }

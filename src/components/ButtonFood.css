@@ -42,4 +42,27 @@
     flex-direction: row;
     justify-content: flex-end;
     background: white;
+    margin-left: 400px;
+}
+
+.bottonBreak {
+    float: left;
+}
+
+.bottonMeal{
+    float: right;
+}
+
+.buttonsmenu{
+    background: #5F5656; 
+}
+
+.commandStyle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    float: right;
+    margin-right: 1%;
+    width: 100%;
+    background: #E0E0E0;
 }

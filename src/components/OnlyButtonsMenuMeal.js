@@ -1,7 +1,7 @@
 import React from 'react';
 import {menu} from "./food.json";
 import "./ButtonFood.css";
-import AddCommand from "./AddCommand";
+//import AddCommand from "./AddCommand";
 
 class OnlyButtonsMenuMeal extends React.Component {
     constructor(props){
@@ -26,17 +26,26 @@ class OnlyButtonsMenuMeal extends React.Component {
             }
             this.setState({
                 printFood: [...this.state.printFood, obj]
-            }, () => console.log(this.state.printFood))
-        }
+            }, () => {const totalCommand = document.getElementsByClassName("totalCommand")[0]
+            totalCommand.innerHTML="";
+            this.state.printFood.map((item,i) =>{
+                return totalCommand.innerHTML += "<p>" + item.keyFood + item.keyPrice + "</p>";
+            })
+                console.log(this.state.printFood)
+            
+        })
+
+    }
 
         
 
     render(){
       const mealButtons = this.state.menuMeal.map((menu, i) => {
             return(
-                <p  key={i} >
+                <p className="buttonsmenu" key={i} >
                     <button className="btn btn-secondary" key={i} onClick={this.addItem} name={menu.description}  value={menu.price}>
-                        {menu.description} 
+                        {menu.description}
+                        <br></br> 
                         {menu.price}
                     </button>
                 </p>     
@@ -45,12 +54,12 @@ class OnlyButtonsMenuMeal extends React.Component {
             )
         });
         return(
+        
         <section>
             {mealButtons}
-           <div className="comandOrderStyle">
-               <AddCommand orderFood={this.state.printFood}/>
-           </div>
         </section>
+        
+           
         )}
 }
 

@@ -56,13 +56,13 @@ class ButtonBreakfast extends React.Component {
             )
         });
         return(
-            <div>
+            <p>
                 <button onClick={ this.toggleDiv.bind(this) } className="btn btn-warning breakfastPosition" type="button" >
                 Desayuno
                 </button>
  
            { !this.state.show && (<div className="buttonFoodPosition">{breakfast}</div>)} 
-           </div>
+           </p>
         )}
 }
 

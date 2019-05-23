@@ -3,31 +3,27 @@ import "./ButtonFood.css";
 import OnlyButtonsMenuMeal from "./OnlyButtonsMenuMeal"
 
 class OnlyButtoMeal extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            show : true,
-        }
-        this.toggleDiv = this.toggleDiv.bind(this);
-    }
-
-        toggleDiv = (e) => {
-            e.preventDefault();
-            this.setState ({ show : !this.state.show 
-            })
-        }
+    // constructor(props){
+    //     super(props);
+    // }
 
         
 
     render(){
     
         return(
-        <div>
-            <button onClick={ this.toggleDiv.bind(this) } className="btn btn-warning breakfastPosition" type="button" >
-                Comida
-            </button>   
+        <div className="bottonMeal">
 
-           {!this.state.show && <OnlyButtonsMenuMeal />} 
+            <button className="btn btn-primary btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Comida
+            </button>
+
+            <div className="collapse" id="collapseExample">
+                <div className="card card-body buttonsmenu">
+                    <OnlyButtonsMenuMeal />
+                </div>
+            </div>
+           
         </div>
         )}
 }

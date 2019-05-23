@@ -1,7 +1,7 @@
 import React from 'react';
 import {menu} from "./food.json";
 import "./ButtonFood.css";
-import AddCommand from "./AddCommand";
+
 
 class OnlyButtonsMenuBreakfast extends React.Component {
     constructor(props){
@@ -23,26 +23,35 @@ class OnlyButtonsMenuBreakfast extends React.Component {
             const target = event.currentTarget;
             const keyFood = target.getAttribute("name");
             const keyPrice = target.getAttribute("value");
-            console.log(keyFood, keyPrice)
+            console.log(keyFood, keyPrice);
         
             const obj ={
                 keyFood,
                 keyPrice
-
             }
+
             this.setState({
                 printFood: [...this.state.printFood, obj]
-            }, () => console.log(this.state.printFood))
+            }, () => { const totalCommand = document.getElementsByClassName("totalCommand")[0]
+            totalCommand.innerHTML="";
+            this.state.printFood.map((item,i) =>{
+                return totalCommand.innerHTML += "<p>" + item.keyFood + item.keyPrice + "</p>";
+            })
+                console.log(this.state.printFood)
+            
+        })
+                
         }
 
 
     render(){
       const breakfast = this.state.menuBreakfast.map((menu, i) => {
             return(
-                <p  key={i} >
+                <p className="buttonsmenu" key={i} >
                     <button className="btn btn-secondary buttonFoodPosition"
                     key={i} onClick={this.addItem} name={menu.description}  value={menu.price}>
-                        {menu.description} 
+                        {menu.description}
+                        <br></br> 
                         {menu.price}
                     </button>
                 </p>    
@@ -51,9 +60,9 @@ class OnlyButtonsMenuBreakfast extends React.Component {
         return(
             <section>
                 {breakfast}
-                <div className="comandOrderStyle">
+                {/* <div className="comandOrderStyle">
                     <AddCommand orderFood={this.state.printFood}/>
-                </div>    
+                </div>     */}
            </section>
         )}
 }

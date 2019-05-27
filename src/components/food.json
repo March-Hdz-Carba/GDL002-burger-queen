@@ -23,27 +23,27 @@
             "meal":[
                 {
                     "description":"Hamburguesa Res sencilla",
-                    "price":"10.00"    
+                    "price":"$10.00"    
                 },
                 {
                     "description":"Hamburguesa Pollo sencilla",
-                    "price":"10.00"    
+                    "price":"$10.00"    
                 },
                 {
                     "description":"Hamburguesa Vegetariana sencilla",
-                    "price":"10.00"    
+                    "price":"$10.00"    
                 },
                 {
                     "description":"Hamburguesa Res doble",
-                    "price":"15.00"    
+                    "price":"$15.00"    
                 },
                 {
                     "description":"Hamburguesa Pollo doble",
-                    "price":"15.00"    
+                    "price":"$15.00"    
                 },
                 {
                     "description":"Hamburguesa Vegetariana doble",
-                    "price":"15.00"    
+                    "price":"$15.00"    
                 },
                 {
                     "description":"+ Queso",

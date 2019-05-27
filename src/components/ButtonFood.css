@@ -66,3 +66,21 @@
     width: 100%;
     background: #E0E0E0;
 }
+
+.buttons-food{
+    display: flex;
+    float: left;
+    margin-left: 1%;
+    width: 48%;
+    height: 750px;
+    background: #5F5656;
+  }
+  
+  .commandPosition {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    float: right;
+    margin-right: 1%;
+    width: 48%;
+  }

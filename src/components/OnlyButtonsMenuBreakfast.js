@@ -1,7 +1,7 @@
 import React from 'react';
 import {menu} from "./food.json";
 import "./ButtonFood.css";
-
+//import ButtonDelete from "./buttonDelete";
 
 class OnlyButtonsMenuBreakfast extends React.Component {
     constructor(props){
@@ -19,6 +19,14 @@ class OnlyButtonsMenuBreakfast extends React.Component {
         //     console.log('funcionando' + name + " " + price);
         // }
 
+        removeItems(index){
+            this.setState({
+                printFood: this.state.printFood.filter((e, i) => {
+                    return i !== index 
+                })
+            })
+        }
+
         addItem = (event) => {
             const target = event.currentTarget;
             const keyFood = target.getAttribute("name");
@@ -30,18 +38,26 @@ class OnlyButtonsMenuBreakfast extends React.Component {
                 keyPrice
             }
 
+
             this.setState({
                 printFood: [...this.state.printFood, obj]
             }, () => { const totalCommand = document.getElementsByClassName("totalCommand")[0]
             totalCommand.innerHTML="";
             this.state.printFood.map((item,i) =>{
-                return totalCommand.innerHTML += "<p>" + item.keyFood + item.keyPrice + "</p>";
+                return totalCommand.innerHTML += "<p>" + item.keyFood + item.keyPrice +  <button type="button" class="btn btn-light" 
+                                                    onClick={this.removeItems.bind(this, i)} key={i}>
+                                                        Eliminar
+                                                    </button> + "</p>"   
+
+            //<ButtonDelete  onClick={this.removeItems.bind(this, i)} key={i}/> + "</p>";
             })
                 console.log(this.state.printFood)
             
         })
                 
         }
+
+
 
 
     render(){
